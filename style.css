@@ -1,0 +1,145 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body {
+  background-color: #00977e;
+  margin: 0px;
+}
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+h1 {
+  background-color: #007c68;
+  color: #000000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #007c68;
+  margin: 20px;
+  margin-top: 100px;
+  padding: 10px;
+}
+#tamrin {
+  background-color: #007c68;
+  margin: 20px;
+  padding: 10px 50px;
+}
+.my-link {
+  color: rgb(0, 84, 4);
+  text-decoration: none;
+}
+button {
+  background-color: #a46300;
+  color: #000000;
+
+  padding: 10px 20px;
+  border: 3px solid #00977e;
+  transition: all;
+}
+#info {
+  animation: pulse 2s infinite;
+}
+button:hover {
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.but {
+  background-color: #a46300;
+  padding: 7px 15px;
+  border: #00977e solid 3px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1000;
+  transition:
+    background-color 0.3s ease,
+    border 0.3s ease,
+    transform 0.3s ease;
+}
+.but:hover {
+  background-color: #007c68;
+  border: #a46300 solid 3px;
+  transform: scale(1.1);
+}
+#tg-1 {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+@media (max-width: 600px) {
+  #tamrin {
+    padding: 10px 15px;
+  }
+  body {
+    margin: 0px;
+  }
+}
+.hidden {
+  opacity: 0;
+  transition: 1s;
+}
+#tem {
+  padding: 2px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+.dark {
+body {
+  background-color: #00977e;
+}
+h1 {
+  background-color: #a46300;
+  color: #000000;
+}
+#home {
+  background-color: #a46300;
+}
+#tamrin {
+  background-color: #a46300;
+}
+button {
+  background-color: #007c68;
+  color: #000000;
+  border: 3px solid #694200;
+}
+.but {
+  background-color: #007c68;
+  border: #694200 solid 3px;
+  transition:
+    background-color 0.3s ease,
+    border 0.3s ease,
+}
+.but:hover {
+  background-color: #a46300;
+  border: #00977e solid 3px;
+}
+}
