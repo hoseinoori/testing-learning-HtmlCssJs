@@ -80,3 +80,19 @@ const tem_button = document.querySelector("#tem");
 tem_button.addEventListener("click", function () {
   document.body.classList.toggle("dark");
 });
+
+const form_tabel = document.getElementById("form-tabel");
+document.getElementById("B-work").addEventListener("click", (e) => {
+  e.preventDefault();
+
+  const text_work = document.getElementById("work").value;
+
+  if (text_work == "") {
+    console.log("ER!");
+  } else {
+    const div = document.createElement("div");
+    div.className = "list-work";
+    div.innerHTML = `<p>${text_work}</p>`;
+    form_tabel.appendChild(div);
+  }
+});

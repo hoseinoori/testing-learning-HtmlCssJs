@@ -58,6 +58,23 @@ button {
 button:hover {
   cursor: pointer;
 }
+.list-work {
+  background-color: #00977e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+#B-work {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: #007c68 solid 3px;
+
+  transition: transform 0.3s ease;
+}
+#B-work:hover {
+  transform: scale(1.05);
+}
 nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -113,33 +130,33 @@ form {
   top: 0px;
 }
 .dark {
-body {
-  background-color: #00977e;
-}
-h1 {
-  background-color: #a46300;
-  color: #000000;
-}
-#home {
-  background-color: #a46300;
-}
-#tamrin {
-  background-color: #a46300;
-}
-button {
-  background-color: #007c68;
-  color: #000000;
-  border: 3px solid #694200;
-}
-.but {
-  background-color: #007c68;
-  border: #694200 solid 3px;
-  transition:
-    background-color 0.3s ease,
-    border 0.3s ease,
-}
-.but:hover {
-  background-color: #a46300;
-  border: #00977e solid 3px;
-}
+  body {
+    background-color: #00977e;
+  }
+  h1 {
+    background-color: #a46300;
+    color: #000000;
+  }
+  #home {
+    background-color: #a46300;
+  }
+  #tamrin {
+    background-color: #a46300;
+  }
+  button {
+    background-color: #007c68;
+    color: #000000;
+    border: 3px solid #694200;
+  }
+  .but {
+    background-color: #007c68;
+    border: #694200 solid 3px;
+    transition:
+      background-color 0.3s ease,
+      border 0.3s ease;
+  }
+  .but:hover {
+    background-color: #a46300;
+    border: #00977e solid 3px;
+  }
 }
