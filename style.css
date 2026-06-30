@@ -137,6 +137,12 @@ form {
     background-color: #a46300;
     color: #000000;
   }
+  .list-work {
+    background-color: #694200;
+  }
+  #B-work {
+    border: #a46300 solid 3px;
+  }
   #home {
     background-color: #a46300;
   }
