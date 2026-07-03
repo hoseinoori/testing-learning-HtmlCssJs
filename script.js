@@ -61,7 +61,7 @@ for (let i = 1; i <= 10; i++) {
 sayHello(3);
 
 const mainHeader = document.querySelector("#tg-1");
-console.log(mainHeader.innerText);
+
 mainHeader.innerText = "به پورتفولیوی مهندس حسین نوری خوش آمدید!";
 
 const linkdin_butten = document.querySelector(".but");
@@ -94,5 +94,20 @@ document.getElementById("B-work").addEventListener("click", (e) => {
     div.className = "list-work";
     div.innerHTML = `<p>${text_work}</p>`;
     form_tabel.appendChild(div);
+    document.getElementById("work").value = "";
   }
 });
+
+async function fetchGithubProfile() {
+  console.log("در حال برقراری ارتباط با سرور گیت‌هاب... ⏳");
+  
+  let response = await fetch("https://api.github.com/users/hoseinoori");
+  
+  let githubData = await response.json();
+  
+  if (response.ok) {
+    mainHeader.innerText = githubData.name
+  } 
+}
+
+fetchGithubProfile();
