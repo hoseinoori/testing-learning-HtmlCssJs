@@ -100,14 +100,14 @@ document.getElementById("B-work").addEventListener("click", (e) => {
 
 async function fetchGithubProfile() {
   console.log("در حال برقراری ارتباط با سرور گیت‌هاب... ⏳");
-  
+
   let response = await fetch("https://api.github.com/users/hoseinoori");
-  
+
   let githubData = await response.json();
-  
+
   if (response.ok) {
-    mainHeader.innerText = githubData.name
-  } 
+    mainHeader.innerText = githubData.name;
+  }
 }
 
 fetchGithubProfile();
